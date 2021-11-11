@@ -29,18 +29,12 @@
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
 
-// Stimulus.js
-import "~/controllers"
+// Svelte
+import "~/svelte";
 
 // Catalyst Web Components
 import "~/components";
 
-// WindiCSS
-import 'virtual:windi-base.css'
-import 'virtual:windi-components.css'
-
 // Your custom CSS here
-import '~/stylesheets/buttons.css'
-import '~/stylesheets/forms.css'
+import "~/styles/application.pcss"
 
-import 'virtual:windi-utilities.css'
