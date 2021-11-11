@@ -85,7 +85,7 @@ const ujs = {
 };
 
 const ELEMENT_PREFIX = 'svelte-';
-const PROPS_ATTRIBUTE_NAME = 'data-svelte-props';
+const PROPS_ATTRIBUTE_NAME = 'data-props';
 
 const noop = () => {};
 
