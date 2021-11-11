@@ -1,5 +1,13 @@
 {
   "type": "commonjs",
+  "keywords": [
+    "svelte",
+    "ruby on rails",
+    "vite",
+    "modern",
+    "experiment",
+    "boilerplate"
+  ],
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@github/catalyst": "^1.1.4",
