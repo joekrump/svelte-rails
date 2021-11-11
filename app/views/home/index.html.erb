@@ -3,21 +3,22 @@
   <p class="text-lg leading-snug">Use this starting point as a way to quickly set up a new project by generating files, installing gems, and more.</p>
 </div>
 
-<!-- Svelte component -->
+<h2 class="text-lg leading-6 font-medium text-gray-900 pt-10 mb-5">Svelte Component</h2>
+<!-- Svelte component. Find the component in frontend/svelte/views/home.svelte -->
 <svelte-home data-props="<%= @data.to_json %>"></svelte-home>
 
 <!-- Catalyst Web Component. Find the component in frontend/components/hello-world -->
-<h2 class="text-lg leading-6 font-medium text-gray-900 pt-10">Catalyst Web Component</h2>
+<h2 class="text-lg leading-6 font-medium text-gray-900 pt-10 mb-5">Catalyst Web Component</h2>
 <hello-world>
-  <div class="mt-5 sm:flex sm:items-center">
+  <form data-action="submit:hello-world#greet" class="sm:flex sm:items-center">
     <div class="w-full sm:max-w-xs">
       <label for="greeting-text" class="sr-only">Greeting</label>
       <input type="text" data-target="hello-world.name" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Add your name">
     </div>
-    <button data-action="click:hello-world#greet" class="mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+    <button type="submit" class="mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
       Save
     </button>
-  </div>
+  </form>
   <div class="mt-2 max-w-xl text-sm text-gray-500">
     <p data-target="hello-world.output"></p>
   </div>

@@ -5,7 +5,8 @@ class HelloWorldElement extends HTMLElement {
   @target name: HTMLElement
   @target output: HTMLElement
 
-  greet() {
+  greet(e: Event) {
+    e.preventDefault();
     this.output.textContent = `Hello, ${this.name.value}!`
   }
 }
