@@ -12,13 +12,13 @@ import Home from "./views/home.svelte";
  * Ex <svelte-home></svelte-home>
  *
  * If you want to pass the component properties, assign a JSON formatted string value to the element's
- * data-svelte-props attribute.
+ * data-props attribute.
  *
- * Ex. <svelte-home data-svelte-props="<%= @a_value_from_rails.to_json %>"></svelte-home>
+ * Ex. <svelte-home data-props="<%= @a_value_from_rails.to_json %>"></svelte-home>
  *
  * Each key in the JSON will map onto a property name of the svelte component it is passed to.
  * For example, if <svelte-home> has a prop: "name" (export let name;), then a JSON formatted string of
- * "{ 'name': 'Svelte' }" that is assigned to data-svelte-props, will result in the "name" prop, getting
+ * "{ 'name': 'Svelte' }" that is assigned to data-props, will result in the "name" prop, getting
  * assigned the value 'Svelte'.
  */
 ViteSvelte.setup({
