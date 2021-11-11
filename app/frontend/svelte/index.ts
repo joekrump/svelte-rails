@@ -23,5 +23,4 @@ import Home from "./views/home.svelte";
  */
 ViteSvelte.setup({
   Home,
-  Hello,
 });
