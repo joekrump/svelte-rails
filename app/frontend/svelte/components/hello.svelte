@@ -2,4 +2,6 @@
   export let name: String;
 </script>
 
-<div>HELLLOOOO {name}!!!!</div>
+<div class="mt-2 max-w-xl text-sm text-gray-500">
+  {name}
+</div>

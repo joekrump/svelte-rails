@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @data = { name: "Svelte ⛱" }
+    @data = { title: "Svelte Component 🌴" }
   end
 end
