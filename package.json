@@ -1,6 +1,7 @@
 {
   "type": "commonjs",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "@github/catalyst": "^1.1.4",
     "@rails/actiontext": "^6.1.4-1",
     "@rails/activestorage": "^6.1.4-1",

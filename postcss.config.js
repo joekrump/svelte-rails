@@ -1,16 +1,16 @@
 // postcss.config.js
 const tailwindcss = require("tailwindcss");
 
-// const purgecss = require("@fullhuman/postcss-purgecss")({
-//   // Specify the paths to all of the template files in your project
-//   content: ["./frontend/**/*.svelte"],
+const purgecss = require("@fullhuman/postcss-purgecss")({
+  // Specify the paths to all of the template files in your project
+  content: ["./frontend/**/*.svelte", "./app/views/**/*.html.erb"],
 
-//   whitelistPatterns: [/svelte-/],
+  whitelistPatterns: [/svelte-/],
 
-//   // Include any special characters you're using in this regular expression
+  // Include any special characters you're using in this regular expression
 
-//   defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
-// });
+  defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
+});
 
 module.exports = {
   plugins: [
@@ -24,6 +24,7 @@ module.exports = {
       },
       stage: 3,
     }),
+    purgecss
     // ...process.env.NODE_ENV == "production" ? [purgecss] : [],
   ],
 };

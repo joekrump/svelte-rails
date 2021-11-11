@@ -28,6 +28,13 @@
   resolved "https://clio.jfrog.io/clio/api/npm/product-npm-prod/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha1-rUldxBsS511YjG24uYNPCPoTHrc=
 
+"@fullhuman/postcss-purgecss@^4.0.3":
+  version "4.0.3"
+  resolved "https://clio.jfrog.io/clio/api/npm/product-npm-prod/@fullhuman/postcss-purgecss/-/postcss-purgecss-4.0.3.tgz#55d71712ec1c7a88e0d1ba5f10ce7fb6aa05beb4"
+  integrity sha1-VdcXEuwceojg0bpfEM5/tqoFvrQ=
+  dependencies:
+    purgecss "^4.0.3"
+
 "@github/catalyst@^1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@github/catalyst/-/catalyst-1.1.4.tgz#b1eb7b35f590d882230ca516f2672a13591b7ce3"
