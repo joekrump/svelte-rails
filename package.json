@@ -9,7 +9,6 @@
     "boilerplate"
   ],
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
     "@github/catalyst": "^1.1.4",
     "@rails/actiontext": "^6.1.4-1",
     "@rails/activestorage": "^6.1.4-1",
@@ -17,6 +16,7 @@
     "tailwindcss": "2.2.19"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
     "@tsconfig/svelte": "^2.0.1",
     "autoprefixer": "10.4.0",
