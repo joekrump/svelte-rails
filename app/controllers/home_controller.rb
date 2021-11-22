@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @data = { title: "Svelte Component 🌴" }
+    @data = { title: "Svelte Client-side rendered Component 🌴" }
   end
 end
