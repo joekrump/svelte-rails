@@ -21,6 +21,5 @@
       />
     </div>
   </form>
-
   <Hello {name} />
 </div>

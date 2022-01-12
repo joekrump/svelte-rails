@@ -92,7 +92,10 @@ const noop = () => {};
 const ViteSvelte = {
   registeredComponents: {},
 
-  render(node, Component, innerContent) {
+  /**
+   * @param {Element} node
+   */
+  render(node, Component) {
     const propsJson = node.getAttribute(PROPS_ATTRIBUTE_NAME);
     const props = propsJson && JSON.parse(propsJson);
     node.innerHTML = null;
@@ -100,12 +103,6 @@ const ViteSvelte = {
       target: node,
       props
     });
-
-    // if (innerContent !== undefined) {
-      node.firstElementChild.append(innerContent);
-    // }
-
-    // node.replaceWith(node.firstElementChild);
   },
 
   registerComponents(components) {
