@@ -1,6 +1,15 @@
-<div class="max-w-lg mx-auto mt-16 text-center">
-  <h1 class="mb-4 text-3xl font-black">Welcome to Svelte + Rails</h1>
-  <p class="text-lg leading-snug">This </p>
+<div class="max-w-lg mx-auto mt-16">
+  <h1 class="mb-4 text-3xl text-center font-black">Welcome to Svelte + Rails</h1>
+  <div class="text-lg leading-snug">
+    <p class="mb-4">This app setup includes:</p>
+    <ul class="list-disc">
+      <li class="list-item">Hot module replacement for .svelte files</li>
+      <li class="list-item">Hot reloading for changes to routes.rb and Rails view files. See <code>vite.config.ts</code> for details.</li>
+      <li class="list-item">A Rails helper to allow for easy addition of .svelte components into .html.erb templates using <code>&lt;svelte-*&gt;</code> syntax. See <code>app/frontend/svelte/index.ts</code> for details.</li>
+      <li class="list-item"><a class="text-blue-600" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a> for styling </li>
+      <li class="list-item"><a class="text-blue-600" href="https://github.github.io/catalyst/">Catalyst web components</a></li>
+    </ul>
+  </div>
 </div>
 
 <!-- Svelte component. Find the component in frontend/svelte/views/home.svelte -->

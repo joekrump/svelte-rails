@@ -1,7 +1,3 @@
-import ViteSvelte from "./helper";
-
-import Home from "./views/home.svelte";
-
 /*
  * If you want to be able to use a svelte component (.svelte) in a .html.erb file
  * you must add the component to the object that is passed to ViteSvelte.setup()
@@ -20,6 +16,11 @@ import Home from "./views/home.svelte";
  * "{ 'name': 'Svelte' }" that is assigned to data-props, will result in the "name" prop, getting
  * assigned the value 'Svelte'.
  */
+
+import ViteSvelte from "./helper";
+
+import Home from "./views/home.svelte";
+
 ViteSvelte.setup({
   Home,
 });
