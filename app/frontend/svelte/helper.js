@@ -101,11 +101,11 @@ const ViteSvelte = {
       props
     });
 
-    if (innerContent !== undefined) {
+    // if (innerContent !== undefined) {
       node.firstElementChild.append(innerContent);
-    }
+    // }
 
-    node.replaceWith(node.firstElementChild);
+    // node.replaceWith(node.firstElementChild);
   },
 
   registerComponents(components) {

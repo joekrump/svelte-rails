@@ -2,7 +2,7 @@ import { controller, target } from "@github/catalyst"
 
 @controller
 class HelloWorldElement extends HTMLElement {
-  @target name: HTMLElement
+  @target name: HTMLInputElement
   @target output: HTMLElement
 
   greet(e: Event) {
