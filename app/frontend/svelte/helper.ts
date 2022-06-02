@@ -4,19 +4,13 @@
 // implemented in http://github.com/reactjs/react-rails
 // which is distributed under Apache License 2.0
 
+interface BrowserWindow extends Window {
+
+}
+
 const ujs = {
   handleEvent(eventName, callback, { once } = { once: false }) {
-    const $ = typeof window.jQuery !== 'undefined' && window.jQuery;
-
-    if ($) {
-      if (once) {
-        $(document).one(eventName, callback);
-      } else {
-        $(document).on(eventName, callback);
-      }
-    } else {
-      document.addEventListener(eventName, callback, { once });
-    }
+    document.addEventListener(eventName, callback, { once });
   },
 
   setup(onMount, onUnmount) {
@@ -123,9 +117,8 @@ const ViteSvelte = {
 
   mountComponents() {
     const { registeredComponents } = this;
-    var toMount = [];
     Object.keys(registeredComponents).forEach((componentName) => {
-      toMount = document.querySelectorAll(`${ELEMENT_PREFIX}${componentName.toLowerCase()}`)
+      let toMount = document.querySelectorAll(`${ELEMENT_PREFIX}${componentName.toLowerCase()}`)
 
       for (let i = 0; i < toMount.length; i += 1) {
         const node = toMount[i];
@@ -139,7 +132,7 @@ const ViteSvelte = {
           }
         } else {
           console.error(
-            `vite-svelte: can not render a component that has not been registered: ${className}`
+            `vite-svelte: can not render a component that has not been registered: ${componentName}`
           );
         }
       }
