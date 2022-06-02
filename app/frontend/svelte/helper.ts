@@ -123,7 +123,7 @@ const ViteSvelte = {
 
   mountComponents() {
     const { registeredComponents } = this;
-    let toMount = [];
+    var toMount = [];
     Object.keys(registeredComponents).forEach((componentName) => {
       toMount = document.querySelectorAll(`${ELEMENT_PREFIX}${componentName.toLowerCase()}`)
 
