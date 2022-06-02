@@ -2,19 +2,17 @@
 // views/layouts/application.html.erb
 //
 //    <%= vite_client_tag %>
-//    <%= vite_javascript_tag 'application' %>
+//    <%= vite_javascript_tag 'entrypoints/application' %>
 
 // If using a TypeScript entrypoint file:
-//     <%= vite_typescript_tag 'application.jsx' %>
+//     <%= vite_typescript_tag 'entrypoints/application.jsx' %>
 //
 // If you want to use .jsx or .tsx, add the extension:
-//     <%= vite_javascript_tag 'application.jsx' %>
+//     <%= vite_javascript_tag 'entrypoints/application.jsx' %>
 
 // console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify.app/guide/rails')
 
 // Example: Load Rails libraries in Vite.
-//
-// import '@rails/ujs'
 //
 // import Turbolinks from 'turbolinks'
 // import ActiveStorage from '@rails/activestorage'
