@@ -276,15 +276,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-styles@npm:^4.1.0":
-  version: 4.3.0
-  resolution: "ansi-styles@npm:4.3.0"
-  dependencies:
-    color-convert: ^2.0.1
-  checksum: 513b44c3b2105dd14cc42a19271e80f386466c4be574bccf60b627432f9198571ebf4ab1e4c3ba17347658f4ee1711c163d574248c0c1cdc2d5917a0ad582ec4
-  languageName: node
-  linkType: hard
-
 "anymatch@npm:~3.1.2":
   version: 3.1.2
   resolution: "anymatch@npm:3.1.2"
@@ -487,16 +478,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.1":
-  version: 4.1.2
-  resolution: "chalk@npm:4.1.2"
-  dependencies:
-    ansi-styles: ^4.1.0
-    supports-color: ^7.1.0
-  checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
-  languageName: node
-  linkType: hard
-
 "chokidar@npm:^3.4.1":
   version: 3.5.2
   resolution: "chokidar@npm:3.5.2"
@@ -549,16 +530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-convert@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "color-convert@npm:2.0.1"
-  dependencies:
-    color-name: ~1.1.4
-  checksum: 79e6bdb9fd479a205c71d89574fccfb22bd9053bd98c6c4d870d65c132e5e904e6034978e55b43d69fcaa7433af2016ee203ce76eeba9cfa554b373e7f7db336
-  languageName: node
-  linkType: hard
-
-"color-name@npm:^1.1.4, color-name@npm:~1.1.4":
+"color-name@npm:^1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
@@ -1198,13 +1170,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"has-flag@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "has-flag@npm:4.0.0"
-  checksum: 261a1357037ead75e338156b1f9452c016a37dcd3283a972a30d9e4a87441ba372c8b81f818cd0fbcd9c0354b4ae7e18b9e1afa1971164aef6d18c2b6095a8ad
-  languageName: node
-  linkType: hard
-
 "has-unicode@npm:^2.0.1":
   version: 2.0.1
   resolution: "has-unicode@npm:2.0.1"
@@ -1808,6 +1773,13 @@ __metadata:
   version: 2.3.0
   resolution: "picomatch@npm:2.3.0"
   checksum: 16818720ea7c5872b6af110760dee856c8e4cd79aed1c7a006d076b1cc09eff3ae41ca5019966694c33fbd2e1cc6ea617ab10e4adac6df06556168f13be3fca2
+  languageName: node
+  linkType: hard
+
+"picomatch@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "picomatch@npm:2.3.1"
+  checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
   languageName: node
   linkType: hard
 
@@ -2506,7 +2478,7 @@ __metadata:
     tslib: ^2.2.0
     typescript: ^4.4.3
     vite: ^2.9.9
-    vite-plugin-full-reload: ^0.2.2
+    vite-plugin-full-reload: ^1.0.0
     vite-plugin-ruby: ^2.0.4
   languageName: unknown
   linkType: soft
@@ -2701,15 +2673,6 @@ __metadata:
   dependencies:
     min-indent: ^1.0.0
   checksum: 18f045d57d9d0d90cd16f72b2313d6364fd2cb4bf85b9f593523ad431c8720011a4d5f08b6591c9d580f446e78855c5334a30fb91aa1560f5d9f95ed1b4a0530
-  languageName: node
-  linkType: hard
-
-"supports-color@npm:^7.1.0":
-  version: 7.2.0
-  resolution: "supports-color@npm:7.2.0"
-  dependencies:
-    has-flag: ^4.0.0
-  checksum: 3dda818de06ebbe5b9653e07842d9479f3555ebc77e9a0280caf5a14fb877ffee9ed57007c3b78f5a6324b8dbeec648d9e97a24e2ed9fdb81ddc69ea07100f4a
   languageName: node
   linkType: hard
 
@@ -2921,13 +2884,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-full-reload@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "vite-plugin-full-reload@npm:0.2.2"
+"vite-plugin-full-reload@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "vite-plugin-full-reload@npm:1.0.0"
   dependencies:
-    chalk: ^4.1
-    picomatch: ^2.2.2
-  checksum: 710b38a005668dbe92c1d39f7845f313f5251be75c71e91f9ba0b74fbd9907f96acf532aa874aed6ce269710729761986f7c694b9b4aeba68d0c5f0b4aa95bb1
+    picocolors: ^1.0.0
+    picomatch: ^2.3.1
+  checksum: 831bcb6857a87f509da8581073a1a978085e3be75689873d8e3f872c336d8f97c01854641b94155ba2be4a087b3d488d440d9ab63e26ae5ac5680f25d6939702
   languageName: node
   linkType: hard
 
