@@ -30,13 +30,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@github/catalyst@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@github/catalyst@npm:1.1.4"
-  checksum: e2807bd181af35b0791bf273931a866b32a36fe5eb6e224b054dbdf18f332fea8baf497c8e8ece5bc53a06c18a38d8f8f140a298fc0ea4185479a241485584f4
-  languageName: node
-  linkType: hard
-
 "@jridgewell/resolve-uri@npm:^3.0.3":
   version: 3.0.7
   resolution: "@jridgewell/resolve-uri@npm:3.0.7"
@@ -2461,7 +2454,6 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@fullhuman/postcss-purgecss": ^4.0.3
-    "@github/catalyst": ^1.1.4
     "@rails/actiontext": ^6.0.5
     "@rails/activestorage": ^6.0.5
     "@sveltejs/vite-plugin-svelte": ^1.0.0-next.11
