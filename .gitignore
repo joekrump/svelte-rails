@@ -63,3 +63,5 @@ yarn-error.log
 vite.config.ts.js
 
 .vscode
+
+.yarn/cache
