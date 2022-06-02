@@ -19,8 +19,8 @@
 
 import ViteSvelte from "./helper";
 
-import Home from "./views/home.svelte";
+import home from "./views/home.svelte";
 
 ViteSvelte.setup({
-  Home,
+  home,
 });
