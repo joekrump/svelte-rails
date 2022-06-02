@@ -29,9 +29,6 @@
 // Svelte
 import "~/svelte";
 
-// Catalyst Web Components
-import "~/components";
-
 // Your custom CSS here
 import "~/styles/application.pcss"
 

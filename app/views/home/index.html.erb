@@ -7,27 +7,9 @@
       <li class="list-item">Hot reloading for changes to routes.rb and Rails view files. See <code>vite.config.ts</code> for details.</li>
       <li class="list-item">A Rails helper to allow for easy addition of .svelte components into .html.erb templates using <code>&lt;svelte-*&gt;</code> syntax. See <code>app/frontend/svelte/index.ts</code> for details.</li>
       <li class="list-item"><a class="text-blue-600" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a> for styling </li>
-      <li class="list-item"><a class="text-blue-600" href="https://github.github.io/catalyst/">Catalyst web components</a></li>
     </ul>
   </div>
 </div>
 
 <!-- Svelte component. Find the component in frontend/svelte/views/home.svelte -->
 <svelte-home data-props="<%= @data.to_json %>"></svelte-home>
-
-<!-- Catalyst Web Component. Find the component in frontend/components/hello-world -->
-<h2 class="text-lg leading-6 font-medium text-gray-900 pt-10 mb-5">Catalyst Web Component</h2>
-<hello-world>
-  <form data-action="submit:hello-world#greet" class="sm:flex sm:items-center">
-    <div class="w-full sm:max-w-xs">
-      <label for="greeting-text" class="sr-only">Greeting</label>
-      <input type="text" data-target="hello-world.name" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Add your name">
-    </div>
-    <button type="submit" class="mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
-      Save
-    </button>
-  </form>
-  <div class="mt-2 max-w-xl text-sm text-gray-500">
-    <p data-target="hello-world.output"></p>
-  </div>
-</hello-world>
