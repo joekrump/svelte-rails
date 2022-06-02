@@ -1,9 +1,8 @@
 module.exports = {
-  purge: [],
+  content: ["./frontend/**/*.svelte", "./app/views/**/*.html.erb"],
   theme: {
     extend: {},
   },
-  variants: {},
   plugins: [
     // require('@tailwindcss/ui'),
   ],
