@@ -12,14 +12,13 @@ This app setup includes:
 
 You will find Svelte components in `app/frontend/svelte/`. To add them to a Rails view (`.html.erb` file), see details in [`app/frontend/svelte/index.ts`](https://github.com/joekrump/svelte-rails/blob/c08b917c80eacffe38b668bdb156160ffe7718a6/app/frontend/svelte/index.ts).
 
-Example: 
+Example:
 
 See `app/views/home/index.html.erb`:
 
 ```erb
 <svelte-home data-props="<%= @data.to_json %>"></svelte-home>
 ```
-
 ### Setup
 
 ```bash
