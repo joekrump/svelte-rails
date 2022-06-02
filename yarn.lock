@@ -638,7 +638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.1, debug@npm:^4.3.2":
+"debug@npm:^4.3.2":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -994,7 +994,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.4, fast-glob@npm:^3.2.7":
+"fast-glob@npm:^3.2.7":
   version: 3.2.7
   resolution: "fast-glob@npm:3.2.7"
   dependencies:
@@ -2479,7 +2479,7 @@ __metadata:
     typescript: ^4.4.3
     vite: ^2.9.9
     vite-plugin-full-reload: ^1.0.0
-    vite-plugin-ruby: ^2.0.4
+    vite-plugin-ruby: ^3.0.12
   languageName: unknown
   linkType: soft
 
@@ -2894,15 +2894,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-ruby@npm:^2.0.4":
-  version: 2.0.5
-  resolution: "vite-plugin-ruby@npm:2.0.5"
+"vite-plugin-ruby@npm:^3.0.12":
+  version: 3.0.12
+  resolution: "vite-plugin-ruby@npm:3.0.12"
   dependencies:
-    debug: ^4.3.1
-    fast-glob: ^3.2.4
+    debug: ^4.3.3
+    fast-glob: ^3.2.11
   peerDependencies:
-    vite: ">=2.2.0"
-  checksum: 65f10fcadf453f0f65a6b50596b6b1375bde0958553b102dc8a0937968978d18bb36b1b9ada772f6c75a455274720eb0581d59a6ec9d29cc1733b66ae1e2cd11
+    vite: ">=2.5.0"
+  checksum: 8a5a5df36ed5b30cd9ce0c9af0683ead5cf306e966d922287526426aad038a855a1f62282a3cfec1e08cd5a39b0ef78eb0e4164a38acc6d662e7d33acb81e3dd
   languageName: node
   linkType: hard
 
