@@ -49,6 +49,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'sidekiq', '~> 6.2', '>= 6.2.1'
+gem 'sidekiq', '~> 6.4'
 gem 'name_of_person', '~> 1.1', '>= 1.1.1'
 gem 'vite_rails', '~> 2.0', '>= 2.0.9'
