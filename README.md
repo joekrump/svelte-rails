@@ -1,6 +1,8 @@
-# README
+# Svelte + Rails
 
-This app setup includes:
+This is a template of an app with a setup that allows Svelte components to be used in combination with ERB templates to render views.
+
+This also includes:
 
 - Hot module replacement for `.svelte` files
 - Hot reloading for changes to `routes.rb` and Rails view files. See [`vite.config.ts`](https://github.com/joekrump/svelte-rails/blob/b62219c0e71d614b8d5f7c398e47e3efb47244e6/vite.config.ts) for details.
